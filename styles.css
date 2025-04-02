@@ -147,11 +147,11 @@ h1{
         width: 90%;
     }
     body{
-        background-color: pink;
+        background-color: rgb(233, 15, 52);
     }
     .musicIcon button{
         border-radius: 50%;
-        margin-left: 100px;
+        margin-left: 110px;
         padding: 10px;
         border-style: none;
         margin-top: 0px;
@@ -159,6 +159,9 @@ h1{
         cursor: pointer;
         position: absolute;
         /* z-index: 1000; */
+    }
+    #msg{
+        margin-bottom: 20px;
     }
 
 } 
