@@ -105,12 +105,14 @@ h1{
 }
 .musicIcon button{
     border-radius: 50%;
-    margin-left: 1400px;
+    margin-left: 650px;
     padding: 10px;
     border-style: none;
     margin-top: 0px;
     background-color: #d8d8b1;
     cursor: pointer;
+    position: absolute;
+    /* z-index: 1000; */
 }
 #new-game{
     cursor: pointer;
@@ -120,18 +122,18 @@ h1{
 }
 @media screen and (max-width: 768px) {
     h1 {
-        font-size: 24px; /* Reduce heading size */
+        font-size: 24px; 
     }
     p {
         font-size: 16px;
     }
     img {
         width: 80%; /* Increase image size on small screens */
-    }
+     }
     body{
         background-color: pink;
     }
-}
+} 
 
 /* For mobile screens (width < 480px) */
 @media screen and (max-width: 480px) {
@@ -145,6 +147,38 @@ h1{
         width: 90%;
     }
     body{
-        background-color: blue;
+        background-color: pink;
+    }
+    .musicIcon button{
+        border-radius: 50%;
+        margin-left: 100px;
+        padding: 10px;
+        border-style: none;
+        margin-top: 0px;
+        background-color: #d8d8b1;
+        cursor: pointer;
+        position: absolute;
+        /* z-index: 1000; */
+    }
+
+} 
+
+
+
+/* Responsive Design */
+@media screen and (max-width: 600px) {
+    .game {
+        max-width: 260px;
+    }
+    .box {
+        height: 80px;
+        width: 80px;
+    }
+    button {
+        font-size: 0.9rem;
+        padding: 8px 12px;
+    }
+    h1 {
+        font-size: 1.5rem;
     }
 }
