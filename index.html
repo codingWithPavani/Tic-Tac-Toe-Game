@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic-Tac-Toe</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1>Tic-Tac-Toe</h1>
+
+  <div class="msg-container hide">
+  <p id="msg">Winner </p>
+   <div class = "reBtn">
+    <button id="new-game">New Game</button>
+    <button id="replay">Replay</button>
+   </div>
+</div>
+<button id="start-btn">Start Game</button>
+<div class="game-container hide">
+  <div class="musicIcon">
+    <button onclick="toggleMusic()" id="musicIcon"><img src="unmute.png" alt="" ></button>
+   </div>
+    <div class="container">
+   <div class="game">
+     <button class="box"></button>
+     <button class="box"></button>
+     <button class="box"></button>
+     <button class="box"></button>
+     <button class="box"></button>
+     <button class="box"></button>
+     <button class="box"></button>
+     <button class="box"></button>
+     <button class="box"></button>
+    </div>
+    
+  
+  </div>
+  <div class="reset-btn">
+    <button id="reset-btn">reset</button>
+   </div>
+ 
+</div>
+<audio src="bgm.mp3" id="bg-music" loop></audio>
+<audio src="button_click.mp3" id="click-sound"></audio>
+<audio src="victory.mp3" id="winning-sound"></audio>
+<audio src="drawMusic.mp3" id="draw-sound"></audio>
+
+</body>
+<script src="script.js"></script>
+</html>
